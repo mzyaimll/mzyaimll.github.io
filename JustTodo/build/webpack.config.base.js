@@ -24,7 +24,7 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 1024, // 如果文件大小小于1024字节，就会转义成base64,否则仍然是图片
+              limit: 10000, // 如果文件大小小于10000字节，就会转义成base64,否则仍然是图片
               name: '[name].[ext]',
               outputPath: 'images/'
             }
